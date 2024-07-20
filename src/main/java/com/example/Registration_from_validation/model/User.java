@@ -5,9 +5,8 @@ import jakarta.validation.constraints.*;
 
 public class User {
 
-    @NotBlank(message = "User name required")
-    @Size(min = 3, message = "Input more than three Letter")
-    private String userName;
+    @NotBlank(message = "Type your name")
+    private String name;
 
     @NotBlank(message = "Example@gmail.com")
     @Email(message = "Enter your Email")
@@ -30,12 +29,12 @@ public class User {
 
     }
 
-    public String getUserName() {
-        return userName;
+    public String getName() {
+        return name;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {

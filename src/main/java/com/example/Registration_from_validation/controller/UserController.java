@@ -22,7 +22,7 @@ public class UserController {
             return "register";
         }
 
-        return "successPage";
+        return "success";
     }
 
 }
